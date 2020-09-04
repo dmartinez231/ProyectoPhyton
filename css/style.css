@@ -114,7 +114,7 @@ video{
 
 /* Seccion nosotros*/
 .about{
-  background-color: rgb(236, 238, 238);
+  background-image: url(../img/fondo.jpg);
 }
 .main-about .description{
   display: flex;
