@@ -1,0 +1,181 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Bad Script', cursive;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+video{
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.header-home{
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0px 0px 10px 15px black;
+  opacity: 0.7;
+  padding-top: 10px;
+}
+.header-home h1{
+  width: 40%;
+  text-align: center;
+}
+.header-home h1 a{
+  text-decoration: none;
+  color: white;
+}
+.header-home nav{
+  padding: 20px 0px;
+  width: 60%;
+}
+.header-home nav ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.header-home nav ul li{
+  margin-right: 20px;
+}
+.header-home nav ul li a{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.home{
+  margin-top: 39%;
+}
+.main-text h1{
+  font-size: 48px;
+  text-align: center;
+}
+.main-text p{
+  font-size: 20px;
+  text-align: center;
+}
+.main-products{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.product-box{
+  width: 30%;
+  border-radius: 15px;
+  background-color: black;
+  box-shadow: 0px 0px 10px 15px black;
+  opacity: 0.7;
+  padding: 10px;
+}
+.container-img img{
+  width: 100%;
+  border-radius: 15px;
+}
+.container-inf{
+  text-align: center;
+  color: white;
+}
+.elaboration{
+  margin-top: 30px;
+  text-align: center;
+}
+.container-iframe{
+  margin-top: 30px;
+}
+.footer-home{
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  box-shadow: 0px 0px 10px 15px black;
+  opacity: 0.7;
+  align-self: flex-end;
+}
+.footer-home nav ul li a{
+  color: white;
+  font-size: 20px;
+}
+.footer-home p{
+  color: white;
+  font-size: 13px;
+}
+
+/* Seccion nosotros*/
+.about{
+  background-color: rgb(236, 238, 238);
+}
+.main-about .description{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.main-about .description-box{
+  width: 33%;
+  padding: 10px;
+}
+.main-about .description .description-box h3{
+  text-align: center;
+}
+
+/* Seccion Contacto */
+.contact-box{
+  width: 100%;
+  padding: 10px;
+}
+
+/* Seccion Registro */
+.main-register{
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.container-register form h2{
+  text-align: center;
+}
+.container-register form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.option{
+  display: flex;
+  justify-content: space-around;
+}
+.option label, .option-radio-group label , .option-checkbox-group label{
+  width: 30%;
+  margin: 5px;
+}
+.option input, .option-radio , .option-checkbox{
+  width: 60%;
+  margin: 5px;
+}
+.option-radio-group , .option-checkbox-group{
+  display: flex;
+  justify-content: space-around;
+}
+#button{
+  width: 30%;
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+}
