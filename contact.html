@@ -2,28 +2,37 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <title>wine - Contacto</title>
     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   </head>
   <body class="about">
     <header class="header-home">
       <h1><a href="index.html">Wine</a></h1>
-      <nav>
-        <ul>
-          <li>
+      <nav id="menu">
+        <section class="control-menu">
+          <a href="#menu" class="open"><span>Menu</span></a>
+          <a href="#" class="close"><span>Cerrar</span></a>
+        </section>
+        <ul class="list-menu">
+          <li class="item">
             <a href="about.html">Nosotros</a>
           </li>
-          <li>
+          <li class="item">
             <a href="contact.html">Contacto</a>
           </li>
-          <li>
+          <li class="item">
             <a href="register.html">Registro</a>
+          </li>
+          <li class="item">
+            <a href="login.html">Iniciar Sesion</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-about">
+    <main class="main-contact">
       <article class="container">
         <div class="contact-box">
           <h3>
@@ -47,11 +56,17 @@
           <li>
             <a href="register.html">Registro</a>
           </li>
+          <li>
+            <a href="login.html">Iniciar Sesion</a>
+          </li>
         </ul>
       </nav>
       <p>
         Pagina creada por David Martinez
       </p>
+      <a href="www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
     </footer>
   </body>
 </html>

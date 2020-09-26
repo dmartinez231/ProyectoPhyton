@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bad Script', cursive;
+  color: #f5f6b0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+video{
+  display: none;
+}
+body{
+  display: grid;
+  grid-template-areas: "head"
+                       "content"
+                       "foot";
+  min-height: 100vh;
+  background: black;
+}
+
+                    /*Estilos de home*/
+.header-home{
+  grid-area: head;
+  align-self: flex-start;
+  display: grid;
+  grid-template-areas: "fila1"
+                       "fila2";
+  background-color: #5e2129;
+}
+.header-home h1{
+  text-align: center;
+}
+.header-home nav ul{
+    display: grid;
+    grid-template-columns: [col0] 1fr [col1] 1fr [col2] 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.footer-home{
+  grid-area: foot;
+  display: grid;
+  grid-template-areas: "fila1"
+                       "fila2";
+  background-color: #5e2129;
+  align-self: flex-end;
+}
+.footer-home p{
+  text-align: center;
+}
+.footer-home nav ul{
+    display: grid;
+    grid-template-columns: [col0] 1fr [col1] 1fr [col2] 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.home{
+  grid-area: content;
+}
+.main-text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "fila1"
+                       "fila2";
+  justify-items: center;
+}
+.main-text h1, .main-text p{
+  color: white;
+  text-align: center;
+}
+.main-products{
+  padding: 10px;
+}
+.product-box{
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-areas: "img"
+                       "inf";
+}
+.container-img{
+  grid-area: img;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+}
+.container-img img{
+  border-radius: 50px;
+  width: 80%;
+}
+
+                    /*Estilos de contacto*/
+.contact-box, .container-register{
+  font-size: 2em;
+}
+.header-home, .footer-home{
+  font-size: 3em;
+}

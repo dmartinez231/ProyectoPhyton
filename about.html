@@ -2,40 +2,49 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <title>wine - Nosotros</title>
     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   </head>
   <body class="about">
     <header class="header-home">
       <h1><a href="index.html">Wine</a></h1>
-      <nav>
-        <ul>
-          <li>
+      <nav id="menu">
+        <section class="control-menu">
+          <a href="#menu" class="open"><span>Menu</span></a>
+          <a href="#" class="close"><span>Cerrar</span></a>
+        </section>
+        <ul class="list-menu">
+          <li class="item">
             <a href="about.html">Nosotros</a>
           </li>
-          <li>
+          <li class="item">
             <a href="contact.html">Contacto</a>
           </li>
-          <li>
+          <li class="item">
             <a href="register.html">Registro</a>
+          </li>
+          <li class="item">
+            <a href="login.html">Iniciar Sesion</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-about">
       <article class="description">
-        <div class="description-box">
+        <div class="description-box" id="description-box-1">
           <h3>Nuestro sueño</h3>
           <p>Un gran sueño pleno de desafíos es lo que nos da la energía necesaria para lograr nuestros objetivos. Queremos ser la Mejor Compañía de Bebidas Uniendo a la Gente por un Mundo Mejor y trabajamos arduamente para fortalecer la reputación de nuestra empresa y de nuestras marcas. Convertirnos en los mejores es nuestro compromiso y un desafío permanente. Apuntamos constantemente a elevar los estándares para construir una compañía que genere crecimiento y resultados sostenibles en el largo plazo.
           </p>
         </div>
-        <div class="description-box">
+        <div class="description-box" id="description-box-2">
           <h3>Nuestra Gente</h3>
           <p>Nuestra Gente es nuestro principal activo y diferencial fundamental de nuestra compañía. Para ser los mejores necesitamos la mejor gente. Nuestros empleados sostienen todo lo que hacemos y nos dan una ventaja competitiva clave. Queremos atraer a los mejores talentos y creemos que esto tendrá un efecto multiplicador extraordinario. Las grandes empresas están formadas por grandes personas.
           </p>
         </div>
-        <div class="description-box">
+        <div class="description-box" id="description-box-3">
           <h3>Nuestra Cultura</h3>
           <p>Nuestra cultura nos hace sentir dueños. Trabajamos para crear lazos duraderos con los consumidores a través de marcas y experiencias que acercan a las personas. El comportamiento ético es un elemento clave de nuestra cultura. La seguridad de Nuestra Gente y la calidad de nuestros productos son prioridad para la Compañía.
           </p>
@@ -62,11 +71,17 @@
           <li>
             <a href="register.html">Registro</a>
           </li>
+          <li>
+            <a href="login.html">Iniciar Sesion</a>
+          </li>
         </ul>
       </nav>
       <p>
         Pagina creada por David Martinez
       </p>
+      <a href="www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
     </footer>
   </body>
 </html>

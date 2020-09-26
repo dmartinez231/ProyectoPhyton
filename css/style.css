@@ -21,6 +21,7 @@ video{
   min-height: 100%;
   z-index: -1;
 }
+/* Seccion Home */
 .header-home{
   display: flex;
   align-self: flex-start;
@@ -42,6 +43,9 @@ video{
 .header-home nav{
   padding: 20px 0px;
   width: 60%;
+}
+.control-menu{
+    display: none;
 }
 .header-home nav ul{
   display: flex;
@@ -111,10 +115,15 @@ video{
   color: white;
   font-size: 13px;
 }
+.footer-home a i{
+  color: white;
+}
 
 /* Seccion nosotros*/
 .about{
   background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .main-about .description{
   display: flex;
@@ -179,3 +188,200 @@ video{
   color: white;
   opacity: 0.7;
 }
+
+/*Media queries */
+  @media only screen and (min-width : 768px) and (max-width: 1223px) {
+    video{
+      display: none;
+    }
+    body{
+      background-image: url(../img/fondo.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .header-home{
+      background-color: #5e2129;
+      box-shadow: none;
+      opacity: 1;
+    }
+    .home{
+      margin-top: 50px;
+    }
+    .main-products{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    .product-box{
+      width: 45%;
+      border-radius: 15px;
+      background-color:  #5e2129;
+      box-shadow: none;
+      opacity: 1;
+      padding: 10px;
+    }
+    #box-3{
+      margin-top: 30px;
+    }
+    .container-inf p{
+      font-size: 20px;
+    }
+    .footer-home{
+      background-color: #5e2129;
+      box-shadow: none;
+      opacity: 1;
+    }
+    /* Seccion about */
+    .description{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    #description-box-1 , #description-box-2, #description-box-3{
+      width: 45%;
+    }
+    /*Seccion contacto*/
+    .main-contact{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+    /*Seccion Registro y login*/
+    .container-register{
+      width: 70%; 
+    }
+  }
+  @media only screen and (max-width: 767px){
+    video{
+      display: none;
+    }
+    body{
+      background-image: url(../img/fondo.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .header-home{
+      background-color: #5e2129;
+      box-shadow: none;
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-home h1{
+      text-align: center;
+      width: 100%;
+    }
+    .header-home nav{
+      display: contents;
+      float: left;
+      width: 100%;
+      padding: 0px;
+      text-align: center;
+      align-items: center;
+    }
+    .control-menu{
+      display: block;
+    }
+    .control-menu a span {
+      display: inline-block;
+      text-indent: -9999px;
+      height: 40px;
+      width: 40px;
+    }
+    .control-menu .close {
+      background-image: url("../img/close-menu.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: none;
+    }
+    .control-menu .open {
+      background-image: url("../img/open-menu.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: block;
+    }
+    .list-menu {
+      clear: both;
+      height: 0;
+      overflow: hidden;
+    	transition: height 0.5s ease-out;
+    }
+    #menu:target .list-menu {
+      height: 160px;
+    	transition: height 1s ease-out;
+      width: 100%;
+    }
+    .close{
+    	display: none;
+    }
+    #menu:target .open{
+    	display: none;
+    }
+    #menu:target .close{
+    	display: block;
+    }
+    .header-home nav ul{
+      display: flex;
+      flex-direction: column;
+    }
+    .header-home nav ul li{
+      margin-right: 0px;
+    }
+    .home{
+      margin-top: 50px;
+    }
+    .main-products{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    .product-box{
+      width: 100%;
+      border-radius: 15px;
+      background-color:  #5e2129;
+      box-shadow: none;
+      opacity: 1;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .container-inf p{
+      font-size: 20px;
+    }
+    .footer-home{
+      background-color: #5e2129;
+      box-shadow: none;
+      opacity: 1;
+    }
+    /* Seccion about */
+    .main-about{
+      display: flex;
+      flex-direction: column;
+    }
+    .description{
+      margin-top: 20px !important;
+      flex-direction: column;
+    }
+    .description-box{
+      flex-direction: column;
+      width: 100% !important;
+    }
+    iframe{
+      width: 100%;
+    }
+    /*Seccion registro y login */
+    .container-register{
+      width: 100%;
+    }
+    /*Seccion contacto*/
+    .main-contact{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
