@@ -124,6 +124,7 @@ video{
   background-image: url(../img/fondo.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 .main-about .description{
   display: flex;
@@ -195,7 +196,7 @@ video{
       display: none;
     }
     body{
-      background-image: url(../img/fondo.jpg);
+      background-image: url(../img/fondoceleste.jpg);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -234,6 +235,9 @@ video{
       opacity: 1;
     }
     /* Seccion about */
+    .about{
+      background-image: url(../img/fondoceleste.jpg);
+    }
     .description{
       display: flex;
       justify-content: space-around;
@@ -251,15 +255,15 @@ video{
     }
     /*Seccion Registro y login*/
     .container-register{
-      width: 70%; 
+      width: 70%;
     }
   }
   @media only screen and (max-width: 767px){
     video{
       display: none;
     }
-    body{
-      background-image: url(../img/fondo.jpg);
+    body, .about{
+      background-image: url(../img/fondoceleste.jpg);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
